@@ -1,0 +1,12 @@
+﻿@model CapaEntidad.Empleado
+
+@{
+    ViewBag.Title = "Eliminar";
+}
+
+
+<h3>¿Estas Seguro que desea eliminar el Empleado: <strong>@Model.Nombre @Model.Apellido</strong>?</h3>
+<br />
+
+<button type="button" class="btn btn-success "><a href="~/Empleados/Inicio">No</a></button>
+<button type="button" class="btn btn-danger"><a href="~/Empleados/Eliminacion/@Model.ID">Si, Deseo Eliminarlo</a></button>

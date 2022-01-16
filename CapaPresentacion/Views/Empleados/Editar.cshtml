@@ -1,0 +1,106 @@
+﻿@model CapaEntidad.Empleado
+
+@{
+    ViewBag.Title = "Editar";
+}
+
+<h2>Editar Empleado</h2>
+
+<form method="post" action="Editar">
+
+    <div class="form-group">
+        <label for="ID">ID:</label>
+        <input type="number" class="form-control" id="ID" name="ID" value="@Model.ID" disabled />
+        <input type="number" style="display:none" id="ID" name="ID" value="@Model.ID" />
+        <br />
+        <label for="Codigo">Codigo:</label>
+        <input type="number" class="form-control" id="Codigo" name="Codigo" value="@Model.Codigo" disabled />
+        <input type="number" style="display:none" id="Codigo" name="Codigo" value="@Model.Codigo" />
+        <br />
+
+        <label for="Nombre">Nombre:</label>
+        <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Ingrese el Nombre" value="@Model.Nombre" required autofocus
+               oninvalid="setCustomValidity('Debe Completar Este Campo para Continuar')"
+               oninput="setCustomValidity('')">
+        <br />
+        <label for="Apellido">Apellido:</label>
+        <input type="text" class="form-control" id="Apellido" name="Apellido" value="@Model.Apellido" placeholder="Ingrese el Apellido" >
+        <br />
+
+        <label for="FechadeIngreso">Fecha de Ingreso:</label>
+        <input type="date" class="form-control" id="FechadeIngreso" name="FechadeIngreso" value="@Model.FechadeIngreso">
+        <br />
+
+        <label for="Telefono">Telefono:</label>
+        <input type="number" class="form-control" id="Telefono" name="Telefono" value="@Model.Telefono" placeholder="Ingrese el Telefono">
+        <br />
+
+        <div class="form-group">
+            <label for="Departamento">Departamento:</label>
+            <select class="form-control" id="Departamento" name="Departamento">
+                @foreach (var x in ViewBag.Departamentos)
+                {
+                    if (x.ID == Model.Departamento)
+                    {
+                        <option selected value="@x.ID">@x.Nombre</option>
+                    }
+                    else
+                    {
+                        <option value="@x.ID">@x.Nombre</option>
+                    }
+
+                }
+            </select>
+        </div>
+
+        <br />
+
+        <div class="form-group">
+            <label for="Cargo">Cargo:</label>
+            <select class="form-control" id="Cargo" name="Cargo">
+                @foreach (var x in ViewBag.Cargos)
+                {
+                    if (x.ID == Model.Cargo)
+                    {
+                        <option selected value="@x.ID">@x.Nombre</option>
+                    }
+                    else
+                    {
+                        <option value="@x.ID">@x.Nombre</option>
+                    }
+                }
+            </select>
+        </div>
+
+        <br />
+
+        <label for="Salario">Salario:</label>
+        <input type="number" class="form-control" id="Salario" name="Salario" value="@Model.Salario" placeholder="Ingrese el Salario">
+        <br />
+
+        <div class="form-group">
+            <label for="Estatus">Estatus:</label>
+            <select class="form-control" id="Estatus" name="Estatus">
+                @if (Model.Estatus == true)
+                {
+                    <option selected value="true">Activo</option>
+                    <option value="false">Inactivo</option>
+
+                }
+                else
+                {
+                    <option  value="true">Activo</option>
+                    <option selected value="false">Inactivo</option>
+                }
+            </select>
+        </div>
+        <br />
+
+
+
+    </div>
+
+    <button type="button" class="btn btn-secondary btn-lg"><a href="~/Empleados/Inicio">Volver al Inicio</a>  </button>
+    <input class="btn btn-primary btn-lg" type="submit" value="Actualizar Empleado" />
+
+</form>

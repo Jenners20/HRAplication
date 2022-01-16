@@ -1,0 +1,145 @@
+﻿
+@{
+    ViewBag.Title = "Inicio";
+}
+
+<h2>Inicio</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Tipo</th>
+            <th scope="col">Parametros</th>
+            <th scope="col">Accion</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Nomina</td>
+
+            <form method="post" action="Nomina">
+                <td>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label for="año">Año:</label>
+                        </div>
+                        <input type="date" class="form-control" name="Año" id="Año" aria-label="Año:" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label for="Mes">Mes:</label>
+                        </div>
+                        <input type="date" class="form-control" name="Mes" id="Mes" aria-label="Mes:" aria-describedby="basic-addon1">
+                    </div>
+                </td>
+                <td>
+                    <input class="btn btn-primary" type="submit" value="Generar Reporte" />
+                </td>
+            </form>
+        </tr>
+
+        <tr>
+            <td>Empleados Activos</td>
+            <td>
+                <form method="post" action="EmpleadosActivos">
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label for="Nombre">Nombre:</label>
+                        </div>
+                        <input type="text" class="form-control" name="Nombre" id="Nombre" aria-label="Nombre:" aria-describedby="basic-addon1">
+                    </div>
+                    <label for="Departamento">Departamento:</label>
+                    <select id="Departamento" name="Departamento" class="custom-select">
+                        <option selected>Seleccionar Departamento</option>
+                        @foreach (var x in ViewBag.Departamentos)
+                        {
+                            <option value="@x.ID">@x.Nombre</option>
+                        }
+                    </select>
+            </td>
+            <td>
+                <input class="btn btn-primary" type="submit" value="Generar Reporte" />
+            </td>
+            </form>
+        </tr>
+
+        <tr>
+            <td>Empleados Inactivos</td>
+            <td></td>
+            <td>
+                <a href="~/Informes/EmpleadosInactivos"><button type="button" class="btn btn-primary ">Generar Informe  </button> </a>
+            </td>
+        </tr>
+        <tr>
+            <td>Departamentos</td>
+            <td></td>
+            <td>
+                <a href="~/Informes/Departamentos"><button type="button" class="btn btn-primary ">Generar Informe  </button> </a>
+            </td>
+        </tr>
+        <tr>
+            <td>Cargos</td>
+            <td></td>
+            <td>
+                <a href="~/Informes/Cargos"><button type="button" class="btn btn-primary ">Generar Informe  </button> </a>
+            </td>
+        </tr>
+        <tr>
+            <td>Entrada de Empleados</td>
+            <td>
+                <form method="post" action="Entradas">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label for="Mes">Mes:</label>
+                        </div>
+                        <input type="date" class="form-control" name="Mes" id="Mes" aria-label="Mes:" aria-describedby="basic-addon1" required>
+                    </div>
+            </td>
+            <td>
+                <input class="btn btn-primary" type="submit" value="Generar Reporte" />
+                </form>
+            </td>
+
+        </tr>
+        <tr>
+            <td>Salida de Empleados</td>
+            <td>
+                <form method="post" action="Salidas">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label for="Mes">Mes:</label>
+                        </div>
+                        <input type="date" class="form-control" name="Mes" id="Mes" aria-label="Mes:" aria-describedby="basic-addon1" required>
+                    </div>
+            </td>
+            <td>
+                <input class="btn btn-primary" type="submit" value="Generar Reporte" />
+                </form>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>Permisos</td>
+            <td>
+                <form method="post" action="Permisos">
+                  
+                    <label for="Departamento">Empleado:</label>
+                    <select id="Departamento" name="Departamento" class="custom-select" required>
+                        <option selected>Seleccionar Empleado</option>
+                        @foreach (var x in ViewBag.Empleados)
+                        {
+                    <option value="@x.ID">@(x.Nombre + " " + x.Apellido)</option>
+                        }
+                    </select>
+            </td>
+            <td>
+                <input class="btn btn-primary" type="submit" value="Generar Reporte" />
+            </td>
+            </form>
+        </tr>
+
+
+    </tbody>
+</table>

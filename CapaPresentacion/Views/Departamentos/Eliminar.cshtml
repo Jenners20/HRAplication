@@ -1,0 +1,12 @@
+﻿@model CapaEntidad.Departamento
+
+@{
+    ViewBag.Title = "Eliminar";
+}
+
+
+<h3>¿Estas Seguro que desea eliminar el Departamento: <strong>@Model.Nombre</strong>?</h3>
+<br />
+
+<button type="button" class="btn btn-success "><a href="~/Departamentos/Inicio">No</a></button>
+<button type="button" class="btn btn-danger"><a href="~/Departamentos/Eliminacion/@Model.ID">Si, Deseo Eliminarlo</a></button>

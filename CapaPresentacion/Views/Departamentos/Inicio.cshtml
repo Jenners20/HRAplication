@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Inicio";
+}
+
+<style>
+    a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .izquierda {
+        display: inline-block;
+        float: right;
+    }
+</style>
+
+<h2>Mantenimiento de Departamentos</h2>
+
+<div class="izquierda">
+    <a href="~/Departamentos/Crear"><button type="button" class="btn btn-primary btn-lg ">  Agregar Nuevo Departamento  </button> </a>
+</div>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Codigo</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var departamento in ViewBag.Departamentos)
+        {
+        <tr>
+            <th scope="row">@departamento.ID</th>
+            <td>@departamento.Codigo</td>
+            <td>@departamento.Nombre</td>
+            <td>
+                <button type="button" class="btn btn-warning"><a href="~/Departamentos/Editar/@departamento.ID"> Editar </a></button>
+                <button type="button" class="btn btn-danger"><a href="~/Departamentos/Eliminar/@departamento.ID"> Eliminar </a></button>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

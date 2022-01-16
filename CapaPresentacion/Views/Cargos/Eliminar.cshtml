@@ -1,0 +1,12 @@
+﻿@model CapaEntidad.Cargo
+
+@{
+    ViewBag.Title = "Eliminar";
+}
+
+<h3>¿Estas Seguro que desea eliminar el cargo: <strong>@Model.Nombre</strong>?</h3>
+<br />
+
+<button type="button" class="btn btn-success "><a href="~/Cargos/Inicio">No</a></button>
+<button type="button" class="btn btn-danger"><a href="~/Cargos/Eliminacion/@Model.ID">Si, Deseo Eliminarlo</a></button>
+

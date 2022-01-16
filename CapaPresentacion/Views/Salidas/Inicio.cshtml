@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "Inicio";
+}
+
+<style>
+    a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .izquierda {
+        display: inline-block;
+        float: right;
+    }
+</style>
+
+<h2>Salida de Empleados</h2>
+
+<div class="izquierda">
+    <a href="~/Salidas/Ver"><button type="button" class="btn btn-primary btn-lg ">Ver Salidas</button> </a>
+</div>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Codigo</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Fecha de Ingreso</th>
+            <th scope="col">Estatus</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var empleado in ViewBag.Empleados)
+        {
+            <tr>
+                <th scope="row">@empleado.ID</th>
+                <td>@empleado.Codigo</td>
+                <td>@empleado.Nombre</td>
+                <td>@empleado.Apellido</td>
+                <td>@empleado.FechadeIngreso</td>
+                <td>
+                    @if (empleado.Estatus == true)
+                    {
+                        <p style="color:green; font-weight:bold;">Activo</p>
+                    }
+                    else
+                    {
+                        <p style="color:red; font-weight:bold;">Inactivo</p>
+                    }
+
+            </td>
+            <td>
+                <button type="button" class="btn btn-warning"><a href="~/Salidas/Crear/@empleado.ID"> Registrar Salida </a></button>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

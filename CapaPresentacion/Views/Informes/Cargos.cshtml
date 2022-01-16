@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Cargos";
+}
+
+<h2>Informe de Cargos</h2>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Cargo in ViewBag.Cargos)
+        {
+            <tr>
+                <th scope="row">@Cargo.ID</th>
+                <td>@Cargo.Nombre</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="~/Informes/Inicio"><button type="button" class="btn btn-primary btn-lg ">Volver Al Inicio</button> </a>

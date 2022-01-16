@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Salidas";
+}
+
+<h2>Informe de Salidas</h2>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Empleado</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Mes de Salida</th>
+            <th scope="col">Motivo</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in ViewBag.Salidas)
+        {
+            <tr>
+                <th scope="row">
+                    @foreach (var y in ViewBag.Empleados)
+                    {
+                        if (x.Empleado == y.ID)
+                        {
+                            @(y.Nombre + " " + y.Apellido)
+                        }
+                    }
+                </th>
+                <td>@x.Tipo</td>
+                <td style="color:red; font-weight:bold;">@ViewBag.Meses[x.FechadeSalida.Month-1]</td>
+                <td>@x.Motivo</td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="~/Informes/Inicio"><button type="button" class="btn btn-primary btn-lg ">Volver Al Inicio</button> </a>

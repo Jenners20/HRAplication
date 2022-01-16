@@ -1,0 +1,35 @@
+﻿@model CapaEntidad.Nomina
+
+@{
+    ViewBag.Title = "Inicio";
+}
+
+<h1>Nominas</h1>
+<br />
+
+
+<div style="float:right;">
+    <a href="~/Nominas/Calcular"><button type="button" class="btn btn-primary btn-lg ">  Calcular Nomina  </button> </a>
+</div>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Año</th>
+            <th scope="col">Mes</th>
+            <th scope="col">Monto Total</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in ViewBag.TotaldeNominas)
+        {
+            <tr>
+                <th scope="row">@x.ID</th>
+                <td>@x.Fecha.Year</td>
+                <td>@ViewBag.Meses[x.Fecha.Month - 1]</td>
+                <td style="color:green; font-weight:bold;">@x.MontoTotal</td>
+            </tr>
+        }
+    </tbody>
+</table>

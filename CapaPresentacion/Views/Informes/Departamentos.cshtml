@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Departamentos";
+}
+
+<h2>Informe de Departamentos</h2>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Codigo</th>
+            <th scope="col">Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var departamento in ViewBag.Departamentos)
+        {
+            <tr>
+                <th scope="row">@departamento.ID</th>
+                <td>@departamento.Codigo</td>
+                <td>@departamento.Nombre</td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="~/Informes/Inicio"><button type="button" class="btn btn-primary btn-lg ">Volver Al Inicio</button> </a>

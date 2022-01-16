@@ -1,0 +1,35 @@
+﻿@model CapaEntidad.Permiso
+
+@{
+    ViewBag.Title = "Crear";
+}
+
+<h1 style="text-align:center;">Registrar Permiso del Empleado: <strong>@ViewBag.Nombre</strong></h1>
+<br />
+
+<h2>Datos del Permiso:</h2>
+<form method="post" action="Crear">
+
+    <div class="form-group">
+        <input type="number" style="display:none" id="Empleado" name="Empleado" value="@ViewBag.Identificacion" />
+        <br />
+
+        <label for="FechaInicio">Fecha de Inicio:</label>
+        <input type="date" class="form-control" id="FechaInicio" name="FechaInicio" />
+        <br />
+
+        <label for="FechaFinal">Fecha de Finalizacion:</label>
+        <input type="date" class="form-control" id="FechaFinal" name="FechaFinal" />
+        <br />
+
+
+        <label for="Comentarios">Comentarios:</label>
+        <input type="text" class="form-control" id="Comentarios" name="Comentarios" placeholder="Ingrese algun Comentario" />
+        <br />
+
+        <br />
+        <button type="button" class="btn btn-secondary btn-lg"><a href="~/Permisos/Inicio">Volver al Inicio</a>  </button>
+        <input class="btn btn-primary btn-lg" type="submit" value="Registrar Permiso" />
+
+    </div>
+</form>

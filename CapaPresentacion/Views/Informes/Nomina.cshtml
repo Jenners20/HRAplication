@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Nomina";
+}
+
+<h2>Informe de Nomina</h2>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Año</th>
+            <th scope="col">Mes</th>
+            <th scope="col">Monto Total</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in ViewBag.Nominas)
+        {
+        <tr>
+            <th scope="row">@x.ID</th>
+            <td>@x.Fecha.Year</td>
+            <td>@ViewBag.Meses[x.Fecha.Month - 1]</td>
+            <td>@x.MontoTotal</td>
+        </tr>
+        }
+    </tbody>
+</table>
+<a href="~/Informes/Inicio"><button type="button" class="btn btn-primary btn-lg ">Volver Al Inicio</button> </a>

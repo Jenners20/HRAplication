@@ -1,0 +1,29 @@
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\bin\Debug\CapaEntidad.dll
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\bin\Debug\EntityFramework.dll
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\bin\Debug\CapaDatos.dll.config
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\bin\Debug\CapaEntidad.pdb
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\bin\Debug\CapaEntidad.dll.config
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\bin\Debug\EntityFramework.xml
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\bin\Debug\CapaEntidad.dll
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\bin\Debug\EntityFramework.dll
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\bin\Debug\CapaDatos.dll.config
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\bin\Debug\CapaEntidad.pdb
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\bin\Debug\CapaEntidad.dll.config
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\bin\Debug\EntityFramework.xml
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaNegocio\obj\Debug\CapaNegocio.pdb

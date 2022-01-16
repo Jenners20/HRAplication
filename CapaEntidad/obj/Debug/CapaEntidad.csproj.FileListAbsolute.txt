@@ -1,0 +1,23 @@
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\bin\Debug\CapaEntidad.dll.config
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\bin\Debug\EntityFramework.dll
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\bin\Debug\EntityFramework.xml
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\obj\Debug\CapaEntidad.csproj.CopyComplete
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\ACER\source\repos\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\obj\Debug\CapaEntidad.csprojAssemblyReference.cache
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\bin\Debug\CapaEntidad.dll.config
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\bin\Debug\EntityFramework.dll
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\bin\Debug\EntityFramework.xml
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\obj\Debug\CapaEntidad.csprojAssemblyReference.cache
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\obj\Debug\CapaEntidad.csproj.CopyComplete
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\Jenners\Documents\Carpetas del escritorio\Clases\MVC\Proyecto Final - Programacion II\Proyecto Final - Programacion II\Aplicacion Gestion de Recursos Humanos\CapaEntidad\obj\Debug\CapaEntidad.pdb

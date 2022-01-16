@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Ver";
+}
+
+<h2>Licencia de Empleados</h2>
+<br />
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Empleado</th>
+            <th scope="col">Fecha de Inicio</th>
+            <th scope="col">Fecha de Finalizacion</th>
+            <th scope="col">Motivo</th>
+            <th scope="col">Comentarios</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in ViewBag.Licencias)
+        {
+            <tr>
+                <th scope="row">
+                    @foreach (var y in ViewBag.Empleados)
+                    {
+                        if (x.Empleado == y.ID)
+                        {
+                            @(y.Nombre + " " + y.Apellido)
+                        }
+                    }
+                </th>
+                <td style="color:green; font-weight:bold;">@x.FechaInicio</td>
+                <td style="color:red; font-weight:bold;">@x.FechaFinal</td>
+                <td>@x.Motivo</td>
+                <td>@x.Comentarios</td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+<br />
+
+<a href="~/Licencias/Inicio"><button type="button" class="btn btn-primary btn-lg ">Volver Atras</button> </a>
+
+

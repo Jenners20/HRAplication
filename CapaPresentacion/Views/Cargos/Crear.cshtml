@@ -1,0 +1,21 @@
+﻿@model CapaEntidad.Cargo
+
+@{
+    ViewBag.Title = "Crear";
+}
+
+<h2>Creacion de Cargo</h2>
+<br />
+<form method="post" action="Crear">
+    <div class="form-group">
+        <label for="Nombre">Ingrese el Nombre del Cargo:</label>
+        <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Ingrese el Nombre" required autofocus
+               oninvalid="setCustomValidity('Debe Completar Este Campo para Continuar')"
+               oninput="setCustomValidity('')">
+    </div>
+    <br />
+
+    <button type="button" class="btn btn-secondary btn-lg"><a href="~/Cargos/Inicio">Volver al Inicio</a>  </button>
+    <input class="btn btn-primary btn-lg" type="submit" value="Guardar Cargo" />
+
+</form>

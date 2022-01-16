@@ -1,0 +1,40 @@
+﻿@model CapaEntidad.Salida
+
+@{
+    ViewBag.Title = "Crear";
+}
+
+<h2 style="text-align:center;">Registrar Salida Del Empleado: <strong>@ViewBag.Nombre</strong></h2>
+<br />
+<h2>Datos de Salida:</h2>
+<form method="post" action="Crear">
+
+    <div class="form-group">
+        <input type="number" style="display:none" id="Empleado" name="Empleado" value="@ViewBag.Identificacion" />
+        <br />
+
+
+        <div class="form-group">
+            <label for="Tipo">Tipo de Salida:</label>
+            <select class="form-control" id="Tipo" name="Tipo">
+                @foreach (var x in ViewBag.Tipo)
+                {
+                    <option value="@x">@x</option>
+
+                }
+            </select>
+        </div>
+        <label for="Motivo">Motivo:</label>
+        <input type="text" class="form-control" id="Motivo" name="Motivo" placeholder="Ingrese el Motivo de Salida" />
+        <br />
+
+        <label for="FechadeSalida">Fecha de Salida:</label>
+        <input type="date" class="form-control" id="FechadeSalida" name="FechadeSalida" />
+        <br />
+        <br />
+
+        <button type="button" class="btn btn-secondary btn-lg"><a href="~/Salidas/Inicio">Volver al Inicio</a>  </button>
+        <input class="btn btn-primary btn-lg" type="submit" value="Registrar Salida" />
+
+    </div>
+</form>

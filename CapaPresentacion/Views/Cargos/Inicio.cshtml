@@ -1,0 +1,45 @@
+﻿@model CapaEntidad.Cargo
+
+@{
+    ViewBag.Title = "Inicio";
+}
+
+<style>
+    a{
+        color:white;
+        text-decoration: none;
+        font-weight:bold;
+    }
+    .izquierda{
+        display: inline-block;
+        float:right;
+    }
+</style>
+
+<h2>Mantenimiento de Cargos</h2>
+
+<div class="izquierda">
+    <a href="~/Cargos/Crear"><button type="button" class="btn btn-primary btn-lg ">  Agregar Nuevo Cargo  </button> </a>
+</div>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Cargo in ViewBag.Cargos)
+        {
+            <tr>
+                <th scope="row">@Cargo.ID</th>
+                <td>@Cargo.Nombre</td>
+                <td>
+                    <button type="button" class="btn btn-warning"><a href="~/Cargos/Editar/@Cargo.ID"> Editar </a></button>
+                    <button type="button" class="btn btn-danger"><a href="~/Cargos/Eliminar/@Cargo.ID"> Eliminar </a></button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

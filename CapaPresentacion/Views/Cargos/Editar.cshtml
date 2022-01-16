@@ -1,0 +1,24 @@
+﻿@model CapaEntidad.Cargo
+
+@{
+    ViewBag.Title = "Editar";
+}
+
+<h2>Editar Cargo</h2>
+
+<form method="post" action="Editar">
+    <div class="form-group">
+        <label for="ID">ID:</label>
+        <input type="number" class="form-control" id="ID" name="ID" value="@Model.ID" disabled />
+        <input type="number" style="display:none" id="ID" name="ID" value="@Model.ID" />
+        <label for="Nombre">Nombre:</label>
+        <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Ingrese el Nombre" required autofocus value="@Model.Nombre"
+               oninvalid="setCustomValidity('Debe Completar Este Campo para Continuar')"
+               oninput="setCustomValidity('')">
+    </div>
+    <br />
+
+    <button type="button" class="btn btn-secondary btn-lg"><a href="~/Cargos/Inicio">Volver al Inicio</a>  </button>
+    <input class="btn btn-primary btn-lg" type="submit" value="Actualizar Cargo" />
+
+</form>

@@ -1,0 +1,25 @@
+﻿@model CapaEntidad.Departamento
+
+@{
+    ViewBag.Title = "Crear";
+}
+
+<h2>Creacion de Departamento</h2>
+<br />
+<form method="post" action="Crear">
+    <div class="form-group">
+        <label for="Codigo">Ingrese el Codigo del Departamento:</label>
+        <input type="number" class="form-control" id="Codigo" name="Codigo" placeholder="Ingrese el Codigo" required autofocus 
+               oninvalid="setCustomValidity('Debe Completar Este Campo para Continuar')"
+               oninput="setCustomValidity('')">
+        <br />
+        <label for="Nombre">Ingrese el Nombre del Departamento:</label>
+        <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Ingrese el Nombre" required autofocus
+               oninvalid="setCustomValidity('Debe Completar Este Campo para Continuar')"
+               oninput="setCustomValidity('')">
+    </div>
+
+    <button type="button" class="btn btn-secondary btn-lg"><a href="~/Departamentos/Inicio">Volver al Inicio</a>  </button>
+    <input class="btn btn-primary btn-lg" type="submit" value="Guardar Departamento" />
+
+</form>

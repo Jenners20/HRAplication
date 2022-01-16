@@ -1,0 +1,73 @@
+﻿@model CapaEntidad.Empleado
+
+@{
+    ViewBag.Title = "Crear";
+}
+
+<h2>Creacion de Empleados</h2>
+<br />
+<form method="post" action="Crear">
+    <div class="form-group">
+
+        <label for="Nombre">Nombre:</label>
+        <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Ingrese el Nombre" required autofocus
+               oninvalid="setCustomValidity('Debe Completar Este Campo para Continuar')"
+               oninput="setCustomValidity('')">
+        <br />
+        <label for="Apellido">Apellido:</label>
+        <input type="text" class="form-control" id="Apellido" name="Apellido" placeholder="Ingrese el Apellido">
+        <br />
+
+        <label for="FechadeIngreso">Fecha de Ingreso:</label>
+        <input type="date" class="form-control" id="FechadeIngreso" name="FechadeIngreso">
+        <br />
+
+        <label for="Telefono">Telefono:</label>
+        <input type="number" class="form-control" id="Telefono" name="Telefono" placeholder="Ingrese el Telefono">
+        <br />
+
+        <div class="form-group">
+            <label for="Departamento">Departamento:</label>
+            <select class="form-control" id="Departamento" name="Departamento">
+                @foreach (var x in ViewBag.Departamentos)
+                {
+                    <option value="@x.ID">@x.Nombre</option>
+                }
+            </select>
+        </div>
+
+        <br />
+
+        <div class="form-group">
+            <label for="Cargo">Cargo:</label>
+            <select class="form-control" id="Cargo" name="Cargo">
+                @foreach (var x in ViewBag.Cargos)
+                {
+                    <option value="@x.ID">@x.Nombre</option>
+                }
+            </select>
+        </div>
+
+        <br />
+
+        <label for="Salario">Salario:</label>
+        <input type="number" class="form-control" id="Salario" name="Salario" placeholder="Ingrese el Salario">
+        <br />
+
+        <div class="form-group">
+            <label for="Estatus">Estatus:</label>
+            <select class="form-control" id="Estatus" name="Estatus">
+                <option value="true">Activo</option>
+                <option value="false">Inactivo</option>
+            </select>
+        </div>
+        <br />
+
+
+
+    </div>
+
+    <button type="button" class="btn btn-secondary btn-lg"><a href="~/Empleados/Inicio">Volver al Inicio</a>  </button>
+    <input class="btn btn-primary btn-lg" type="submit" value="Guardar Empleado" />
+
+</form>

@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Ver";
+}
+
+<h2>Salidas de Empleados</h2>
+<br />
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Empleado</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Fecha de Salida</th>
+            <th scope="col">Motivo</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in ViewBag.Salidas)
+        {
+            <tr>
+                <th scope="row">
+                    @foreach (var y in ViewBag.Empleados)
+                    {
+                        if (x.Empleado == y.ID)
+                        {
+                            @(y.Nombre + " " + y.Apellido)
+                        }
+                    }
+                </th>
+                <td>@x.Tipo</td>
+                <td style="color:red; font-weight:bold;">@x.FechadeSalida</td>
+                <td>@x.Motivo</td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+<br />
+
+<a href="~/Salidas/Inicio"><button type="button" class="btn btn-primary btn-lg ">Volver Atras</button> </a>

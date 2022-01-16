@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Calcular";
+}
+
+<h2>Calculo de Nomina <strong>@ViewBag.Meses[DateTime.Now.Month-1]</strong> del <strong>@DateTime.Now.Year</strong></h2>
+
+<br />
+<h3>Salario de Empleados Activos:</h3>
+<br />
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Fecha de Ingreso </th>
+            <th scope="col">Salario </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in ViewBag.Empleados)
+        {
+            <tr>
+                <th scope="row">@x.Nombre</th>
+                <th scope="row">@x.FechadeIngreso</th>
+                <th scope="row">@x.Salario</th>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+<br />
+
+<h4>Total de Nomina: <strong style="color:green;">@ViewBag.Total</strong></h4>
+<br />
+
+<button type="button" class="btn btn-success "><a href="~/Nominas/Inicio">Cancelar</a></button>
+<button type="button" class="btn btn-danger"><a href="~/Nominas/Calcularr">Aceptar</a></button>

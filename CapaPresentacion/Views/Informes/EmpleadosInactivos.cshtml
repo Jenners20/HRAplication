@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "EmpleadosInactivos";
+}
+
+<h2>Informe Empleados Inactivos</h2>
+
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Codigo</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Departamento</th>
+            <th scope="col">Cargo</th>
+            <th scope="col">Fecha de Ingreso</th>
+            <th scope="col">Salario</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var empleado in ViewBag.Empleados)
+        {
+            <tr>
+                <th scope="row">@empleado.ID</th>
+                <td>@empleado.Codigo</td>
+                <td>@empleado.Nombre</td>
+                <td>@empleado.Apellido</td>
+                <td>@empleado.Telefono</td>
+                <td>
+                    @foreach (var x in ViewBag.Departamentos)
+                    {
+                        if (empleado.Departamento == x.ID)
+                        {
+                            @x.Nombre
+                        }
+                    }
+                </td>
+                <td>
+                    @foreach (var x in ViewBag.Cargos)
+                    {
+                        if (empleado.Cargo == x.ID)
+                        {
+                            @x.Nombre
+                        }
+                    }
+                </td>
+                <td>@empleado.FechadeIngreso</td>
+                <td>@empleado.Salario</td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="~/Informes/Inicio"><button type="button" class="btn btn-primary btn-lg ">Volver Al Inicio</button> </a>
